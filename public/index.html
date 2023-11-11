@@ -5,8 +5,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
   <body>
-    
+    <header id="header">
+      <div class="logo">
+        <img id="header-img"
+             src="https://images.freeimages.com/clg/istock/previews/4767/47677076-cartoon-brass-trumpet.jpg" 
+             alt="mock fantastic brass logo" />
+        <h1>Fantastic Brass</h1>
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#details">Details</a></li>
+          <li><a class="nav-link" href="#watch">Watch</a></li>
+          <li><a class="nav-link" href="#prices">Prices</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-section">
+      <div class="container">
+        <section id="hero" class="page-section">
+          <h2>The finest brass instruments</h2>
+          <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+            <input id="email" type="email" name="email" placeholder="Enter your email address" required>
+            <input id="submit" type="submit" value="Sign Up" class="btn">
+          </form>
+        </section>
+        <section id="details" class="page-section">
+          <div class="detail">
+            <div class="icon">
+              <i class="fa fa-3x fa-music"></i>
+            </div>
+            <div class="description">
+              <h3>Sensational Sound</h3>
+              <p>Our instruments are played by professionals in the world's finest ensembles.</p>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="icon">
+              <i class="fa fa-3x fa-award"></i>
+            </div>
+            <div class="description">
+              <h3>Quality Guarantee</h3>
+              <p>Each of our instruments is hand-made and tested to ensure they are built to the highest standards.</p>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="icon">
+              <i class="fa fa-3x fa-file"></i>
+            </div>
+            <div class="description">
+              <h3>Lifetime Warranty</h3>
+              <p>Since we are committed to ensuring every customer is satisfied, we promise to make any repairs or adjustments to your instrument, free of chanrge.</p>
+            </div>
+          </div>
+        </section>
+        <section id="watch" class="page-section">
+          <iframe id="video"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/jsJXJ6C-WN0?si=C1A4i5PXjMm-np_i"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+        </section>
+        <section id="prices" class="page-section">
+          <div class="product">
+            <div class="product-content">
+              <h2>B-flat Trumpet</h2>
+              <p>$10,000</p>
+              <ul>
+                <li>Yellow or silver brass</li>
+                <li>Hard or soft case</li>
+              </ul>
+              <div class="btn-container">
+                <button class="btn">SELECT</button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-content">
+              <h2>C Trumpet</h2>
+              <p>$10,500</p>
+              <ul>
+                <li>Yellow or silver brass</li>
+                <li>Hard or soft case</li>
+              </ul>
+              <div class="btn-container">
+                <button class="btn">SELECT</button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-content">
+              <h2>Double Horn</h2>
+              <p>$19,500</p>
+              <ul>
+                <li>Yellow brass</li>
+                <li>Geyer-style</li>
+                <li>Hard or soft case</li>
+              </ul>
+              <div class="btn-container">
+                <button class="btn">SELECT</button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-content">
+              <h2>Tenor Trombone</h2>
+              <p>$15,000</p>
+              <ul>
+                <li>Yellow or silver brass</li>
+                <li>Rotary valve included</li>
+                <li>Hard or soft case</li>
+              </ul>
+              <div class="btn-container">
+                <button class="btn">SELECT</button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-content">
+              <h2>Bass Trombone</h2>
+              <p>$18,000</p>
+              <ul>
+                <li>Yellow or silver brass</li>
+                <li>Rotary valves included</li>
+                <li>Hard or soft case</li>
+              </ul>
+              <div class="btn-container">
+                <button class="btn">SELECT</button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-content">
+              <h2>Tuba</h2>
+              <p>$22,000</p>
+              <ul>
+                <li>Yellow or silver brass</li>
+                <li>Hard or soft case</li>
+              </ul>
+              <div class="btn-container">
+                <button class="btn">SELECT</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="#">Terms & Conditions</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+      <p>Copyright 2023, Fantastic Brass</p>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    min-height: 80px;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gold;
+    z-index: 1;
+    border-bottom: 2px solid black;
+}
+
+header .logo {
+    width: 60vw;
+    display: flex;
+    align-items: center;
+}
+
+header img#header-img {
+    width: 100px;
+}
+
+header h1 {
+    margin-left: 15px;
+    font-size: 2rem;
+}
+
+header nav ul {
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header a.nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+header a.nav-link:hover {
+    text-decoration: underline;
+}
+
+#main-section {
+    background: linear-gradient(#483d8b, #7565d3);
+    color: white;
+    margin-top: 80px;
+}
+
+#main-section .container {
+    width: 90%;
+    margin: auto;
+}
+
+#main-section .page-section {
+    text-align: center;
+    padding-top: 40px;
+}
+
+#main-section #hero h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+#main-section #hero form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-section #hero form input[type="email"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 4px;
+}
+
+#main-section form input[type="submit"],
+#main-section .btn {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: gold;
+}
+
+#main-section form input[type="submit"]:hover,
+#main-section .btn:hover {
+    cursor: pointer;
+    background-color: goldenrod;
+}
+
+#main-section #details .detail {
+    display: flex;
+    height: 100px;
+}
+
+#main-section #details .detail .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    color: gold;
+}
+
+#main-section #details .detail .description {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    width: 80%;
+}
+
+#main-section #details .detail .description h3 {
+    font-size: 1.8rem;
+}
+
+#main-section #prices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 40px;
+}
+
+#main-section .product {
+    padding: 0 20px 40px 20px;
+}
+
+#main-section .product .product-content {
+    position: relative;
+    border: 1px solid white;
+    min-height: 250px;
+}
+
+#main-section .product .product-content h2 {
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+
+#main-section .product .product-content p {
+    padding: 15px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#main-section .product .product-content ul {
+    padding: 0 25px;
+    text-align: left;
+}
+
+#main-section .product .product-content ul li {
+    margin-bottom: 5px;
+}
+
+#main-section .product .product-content .btn-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer {
+    background-color: gold;
+    padding: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+footer ul li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 799px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    header .logo {
+        width: 100%;
+    }
+
+    header .logo h1 {
+        font-size: 1.3rem;
+    }
+    
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    #main-section {
+        margin-top: 186px;
+    }
+
+    #main-section #prices {
+        grid-template-columns: 1fr;
+    }
+
+    #main-section .product {
+        padding: 0 0 30px 0;
+    }
+
+    #main-section #details .detail {
+        justify-content: center;
+    }
+
+    #main-section #details .detail .icon {
+        display: none;
+    }
+
+    #main-section #details .detail .description {
+        text-align: center;
+        width: 100%;
+    }
+
+    #main-section #details .detail .description h3 {
+        font-size: 1.5rem;
+    }
+
+    #main-section #watch iframe#video {
+        width: 100%;
+    }
+}
